@@ -1,30 +1,31 @@
-🤖 Dockerized Model Server
+# 🤖 Dockerized Model Server
+
 A lightweight, reproducible AI server — built with Docker and published through GitHub Container Registry.
+
 This project demonstrates how to package a Python server together with a language model into a Docker image, automatically build and publish it through GitHub Actions, and make it runnable with a single command.
 
+---
 
-⸻
+## ✨ Overview
 
+The server combines a simple HTTP API with **Qwen3-0.6B**, allowing users to interact with a language model through a containerized endpoint.
 
-✨ Overview
-The server combines a simple HTTP API with Qwen3-0.6B, allowing users to interact with a language model through a containerized endpoint.
 The application is designed to be:
-🐳 Containerized — the application and its dependencies live inside the image.
-🔁 Reproducible — anyone can run the same published image.
-⚙️ Automated — GitHub Actions builds and publishes the image.
-🌍 Portable — no local project setup is required to run the published image.
 
+- 🐳 **Containerized** — the application and its dependencies live inside the image.
+- 🔁 **Reproducible** — anyone can run the same published image.
+- ⚙️ **Automated** — GitHub Actions builds and publishes the image.
+- 🌍 **Portable** — no local project setup is required to run the published image.
 
-⸻
+---
 
+## 👥 Team
 
-👥 Team
-Member
-Wasan
-Norah
-Hura
-
-
+| Member |
+|--------|
+| Wasan |
+| Norah |
+| Hura |
 ⸻
 ## 🏗️ Architecture
 
