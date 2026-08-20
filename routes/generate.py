@@ -8,7 +8,7 @@ tok = AutoTokenizer.from_pretrained(MODEL, local_files_only=True)
 model = AutoModelForCausalLM.from_pretrained(MODEL, local_files_only=True)
 
 def handle():
-    prompt = "In two sentences, what is the main difference between CPU VS GPU?"
+    prompt = "In one sentence, what is a data centre for?"
 
     ids = tok(prompt, return_tensors="pt")
 
