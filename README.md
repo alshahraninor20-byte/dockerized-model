@@ -26,38 +26,42 @@ Hura
 
 
 ⸻
+## 🏗️ Architecture
 
-
-🏗️ Architecture
+```text
                     GitHub Repository
                            │
                            ▼
                     GitHub Actions
                            │
+                           ▼
                      Docker Build
                            │
                            ▼
-                 GitHub Container Registry
+              GitHub Container Registry
                            │
                            ▼
                     Docker Pull / Run
                            │
                            ▼
                     ┌──────────────┐
-                    │   Server     │
+                    │    Server    │
                     │    :8000     │
                     └──────┬───────┘
                            │
-              ┌────────────┴────────────┐
-              ▼                         ▼
-             `/`                  el Server
-A l       Team Information             Qwen3-0.6B
-
-
+                  ┌────────┴────────┐
+                  │                 │
+                  ▼                 ▼
+                 `/`          `/generate`
+                  │                 │
+                  ▼                 ▼
+           Team Information     Qwen3-0.6B
+                                      │
+                                      ▼
+                              Generated Response
 ⸻
 
 
-📁 Project Structure
 dockerized-model/
 │
 ├── .github/
@@ -69,8 +73,6 @@ dockerized-model/
 ├── requirements.txt
 ├── server.py
 └── README.md
-
-
 ⸻
 
 
