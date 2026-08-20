@@ -26,7 +26,9 @@ The application is designed to be:
 | Wasan |
 | Norah |
 | Hura |
-⸻
+
+
+
 ## 🏗️ Architecture
 
 ```text
